@@ -11,6 +11,7 @@ const people = [
 let input = document.querySelector('.input');
 let output = document.querySelector('.result');
 let result = [];
+const names = [];
 function showInput(e) {
   let outputresult = '';
   const value = input.value;
@@ -32,7 +33,7 @@ function showInput(e) {
 }
 
 addEventListener('input', showInput);
-const names = [];
+
 for (person of people) {
   console.log(person.name);
   names.push(person.name);
