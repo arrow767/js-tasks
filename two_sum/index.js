@@ -18,6 +18,22 @@
 
 twoSum(nums, target)
 
+
+
+let arr2 = [1, 4, 7, 10]
+function twoSum(arr, target) {
+    for(let i = 0; i < arr.length; i++){
+        for(let k = i + 1; k < arr.length; k++){
+            if(arr[i] + arr[k] === target) {
+                return true
+            } 
+        }
+     }
+     return false
+}
+
+console.log(twoSum(arr2, 11))
+
 //reverse integer
 
 let x = 145_242
