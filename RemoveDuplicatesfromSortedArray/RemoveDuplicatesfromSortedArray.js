@@ -25,4 +25,11 @@ const removeDuplicates = function(nums) {
 };
 
 
-console.log(removeDuplicates([1,2,4,4]))
+console.log(removeDuplicates([1,2,4,5,4,5]))
+
+function apply2(object) {
+    this = object
+    return this
+}
+
+Array.prototype.apply2 = apply2()
